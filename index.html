@@ -22,27 +22,7 @@
 <button id="push">&raquo; Run</button>
 <center><div id="calcul">CALCULATOR</div>
 
- <script>
-    $( "#push" ).click(function() {
-  $( "#calcul" ).animate({
-    width: "60%",
-    opacity: 0.4,
-    marginLeft: "0.6in",
-    fontSize: "07em",
-    borderWidth: "10px"
-  }, 1500 );
-});
-    $( "#right" ).click(function() {
-  $( ".block" ).animate({ "left": "+=50px" }, "fast" );
-});
- 
-$( "#left" ).click(function(){
-  $( ".block" ).animate({ "left": "-=50px" }, "slow" );
-});
-$( "button" ).click(function() {
-  $( "p" ).show( "slow" );
-});
-</script>   
+  
    
 <div class="block">
 <div id="supercontainer">
@@ -95,9 +75,31 @@ $( "button" ).click(function() {
     <div><input type="button" value="9" onclick="showValue('9')"/></div>
 
     </div>
-  </div>
-  </div>  
-     <script>
+      </center>
+  </div> 
+</div> 
+  <script>
+    // this is for the fild slider
+    $( "#push" ).click(function() {
+  $( "#calcul" ).animate({
+    width: "60%",
+    opacity: 0.4,
+    marginLeft: "0.6in",
+    fontSize: "07em",
+    borderWidth: "10px"
+  }, 1500 );
+});
+    $( "#right" ).click(function() {
+  $( ".block" ).animate({ "left": "+=50px" }, "fast" );
+});
+ 
+$( "#left" ).click(function(){
+  $( ".block" ).animate({ "left": "-=50px" }, "slow" );
+});
+$( "button" ).click(function() {
+  $( "p" ).show( "slow" );
+});
+    // second slider
     $( "#click" ).click(function() {
   $( "#convert" ).animate({
     width: "60%",
@@ -109,10 +111,10 @@ $( "button" ).click(function() {
 });
 
     $( "#rightone" ).click(function() {
-  $( ".secondBlock" ).animate({ "left": "+=50px" }, "fast" );
+  $( ".secondBlock" ).css('margin-left', '+=50px');
 });
     $( "#leftone" ).click(function(){
-  $( ".secondBlock" ).animate({ "left": "-=50px" }, "slow" );
+  $( ".secondBlock" ).css('margin-left', '-=50px');
 });
 $( "button" ).click(function() {
   $( "p" ).show( "slow" );

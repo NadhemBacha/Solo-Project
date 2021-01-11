@@ -1,4 +1,4 @@
-
+window.onload=function(){ 
 function showValue(num){
   document.getElementById('output').value+=num
 }
@@ -25,3 +25,7 @@ function pow2(){
   total*= total
   document.getElementById('output').value=total
 }
+}
+// setInterval(function(){
+ //  console.log('ok')
+ // },5000)
