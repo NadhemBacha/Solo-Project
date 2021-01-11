@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Calcultor</title>
+    <link rel='icon' href="https://mathsnoproblem.com/wp-content/uploads/2018/09/MNP_Blog_Sept_19_Are-Calculators-in-the-classroom-such-a-bad-thing_HERO_1140x712.jpg">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="main.js"></script>
+
+    
+
+</head>
+
+<body>
+    <button id="left">&laquo;</button>
+<button id="right">&raquo;</button>
+
+ 
+
+<button id="push">&raquo; Run</button>
+<center><div id="calcul">CALCULATOR</div>
+
+ <script>
+    $( "#push" ).click(function() {
+  $( "#calcul" ).animate({
+    width: "60%",
+    opacity: 0.4,
+    marginLeft: "0.6in",
+    fontSize: "07em",
+    borderWidth: "10px"
+  }, 1500 );
+});
+    $( "#right" ).click(function() {
+  $( ".block" ).animate({ "left": "+=50px" }, "fast" );
+});
+ 
+$( "#left" ).click(function(){
+  $( ".block" ).animate({ "left": "-=50px" }, "slow" );
+});
+$( "button" ).click(function() {
+  $( "p" ).show( "slow" );
+});
+</script>   
+   
+<div class="block">
+<div id="supercontainer">
+    <center><div><input type="text" id="output"/></div>
+<div id="container">
+    <div><input type="button" class="ac" value="AC" onclick="Reset()"/></div>
+    <div><input type="button" value="CE" onclick="removeOne()"/></div>
+    <div><input type="button" value="%" onclick="showValue('%')"/></div>
+    <div><input type="button" value="/" onclick="showValue('/')"/></div>
+    <div><input type="button" value="7" onclick="showValue('7')"/></div>
+    <div><input type="button" value="8" onclick="showValue('8')"/></div>
+    <div><input type="button" value="9" onclick="showValue('9')"/></div>
+    <div><input type="button" value="X" onclick="showValue('*')"/></div>
+    <div><input type="button" value="4" onclick="showValue('4')"/></div>
+    <div><input type="button" value="5" onclick="showValue('5')"/></div>
+    <div><input type="button" value="6" onclick="showValue('6')"/></div>
+    <div><input type="button" value="-" onclick="showValue('-')"/></div>
+    <div><input type="button" value="1" onclick="showValue('1')"/></div>
+    <div><input type="button" value="2" onclick="showValue('2')"/></div>
+    <div><input type="button" value="3" onclick="showValue('3')"/></div>
+    <div><input type="button" value="+" onclick="showValue('+')"/></div>
+    <div><input type="button" value="0" onclick="showValue('0')"/></div>
+    <div><input type="button" value="." onclick="showValue('.')"/></div>
+    <div><input type="button" value="=" onclick="operation()"/></div>
+    <div><input type="button" value="a²" onclick="pow2()"/></div>    
+</div>   
+</div>
+</div>
+ <button id="leftone">&laquo;</button>
+<button id="rightone">&raquo;</button>
+
+ 
+
+<button id="click">&raquo; Run</button>
+<center><div id="calcul">CONVERTER</div>
+<center><div><input type="text" id="out"/></div>
+
+</body>
+</html> 
