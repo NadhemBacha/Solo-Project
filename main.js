@@ -51,11 +51,11 @@ document.getElementById('out').value=result
  // console.log('ok')
  // },5000)
 
-$(document).ready(function(){
-  $("#hide").click(function(){
-    $("#push").hide();
-  });
-  $("#show").click(function(){
-    $("#push").show();
-  });
-});
+// $(document).ready(function(){
+//   $("#hide").click(function(){
+//     $("#clacul").hide();
+//   });
+//   $("#show").click(function(){
+//     $("#calcul").show();
+//   });
+// });

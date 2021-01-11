@@ -92,14 +92,19 @@
   }, 1500 );
 });
     $( "#hide" ).click(function() {
-  $( "#calcul" ).animate({
-    width: "0%",
-    opacity: 0.4,
-    marginLeft: "0.6in",
-    fontSize: "07em",
-    borderWidth: "10px"
-  }, 1500 );
+   $( "#calcul" ).hide(
+  //   width: "0%",
+  //   opacity: 0.4,
+  //   marginLeft: "0.6in",
+  //   fontSize: "07em",
+  //   borderWidth: "10px"
+    1500 );
 });
+    $("#show").click(function(){
+    $("#calcul").show(
+        1500);
+});
+    
     $( "#right" ).click(function() {
   $( ".block" ).animate({ "left": "+=50px" }, "fast" );
 });
