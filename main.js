@@ -1,4 +1,4 @@
-window.onload=function(){ 
+
 function showValue(num){
   document.getElementById('output').value+=num
 }
@@ -25,7 +25,37 @@ function pow2(){
   total*= total
   document.getElementById('output').value=total
 }
+
+function show(num){
+  document.getElementById('out').value+=num
 }
-// setInterval(function(){
- //  console.log('ok')
+function remove1(){
+  var rem1=document.getElementById('out').value
+  var str="";
+  var i =0;
+  while(i<rem1.length-1){
+    str+=rem1[i];
+    i++;
+  }
+  document.getElementById('out').value=str
+}
+function Reset1(){
+  document.getElementById('out').value =''
+}
+function converter(){
+var result=document.getElementById('out').value;
+result *= 2.20462262185
+document.getElementById('out').value=result
+}
+//setInterval(function(){
+ // console.log('ok')
  // },5000)
+
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("#push").hide();
+  });
+  $("#show").click(function(){
+    $("#push").show();
+  });
+});

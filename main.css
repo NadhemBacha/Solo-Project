@@ -117,10 +117,23 @@ input:hover{
 #try1 {
 	margin-right: 1565px;
 	margin-top: 650px;
+	box-sizing: border-box;
+
 }
 #containerTwo{
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 0 auto;
-	display: inline-block;
+	margin: auto;
+	display: flex;
+	box-sizing: content;
+	font-size: 30px,
 }
+.animation {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: myfirst 5s 2;
+  animation-direction: alternate-reverse;
+}
+
